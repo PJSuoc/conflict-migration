@@ -20,7 +20,7 @@ Net migration numbers for countries and regions to properly estimate where peopl
 
 1. Interactive Map. Goal would be to be able to use a slider to move the map across each year that is in the data, as well as click individual countries in order to garner some additional information about them.
 
-https://votemaximizer.org/ the map here is relatively close to my envisioned idea. Selectors/sliders on the bottom or side, and then you can click each state (in my case, country) and it will zoom in or just provide hover-over information. (without the page switching or info dumps!)
+https://votemaximizer.org/ the map here is relatively close to my envisioned idea. Selectors/sliders on the bottom or side, and then you can click each state (in my case, country/region) and it will zoom in or just provide hover-over information. (without the page switching or info dumps!)
 
 2. Bubble Charts. Countries grouped by regions with size corresponding to net migration numbers. Regions could then be selected to zoom into all the countries in that region grouped in a similar way. Sliders/options on the side would cover years and violence types experienced by each region or country. 
 
@@ -38,6 +38,8 @@ Overall, I would say I am actually more interested in experimenting with what I 
 
 ## Questions
 
-1. I think my biggest theoretical question will be how & where I choose to implement options between violence, violence per capita, migration, migration per capita, and violence/migration as a combined metric. At what level to show those, or which ones might be most useful.
+1. I think my biggest theoretical question will be how & where I choose to implement options between violence, violence per capita, migration, migration per capita, and violence/migration as a combined metric. At what level to show those, or which ones might be most useful. Thoughts on that might be hard to give without data pictures, but if you have any basic ones appreciated!
 
 2. ACLED shows a lot of interesting things with different types of violence as seen in my static project, but I am concerned that including that here might be an issue of too much different information on the page. Or I might need to flip it as a sidebar option with the options listed in question 1 and only include the violence types in a deeper level.
+
+3. Any reason not to have the supporting options listed in the sketch with Option 2 as well?
