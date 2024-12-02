@@ -1,0 +1,91 @@
+﻿Country,Region,event_type,sub_event_type
+Joe,A,Physical,Kick
+Joe,A,Verbal,Insult
+Joe,A,Mental,Mind Control
+Joe,A,Physical,Punch
+Bob,A,Verbal,Sass
+Bob,A,Mental,Mind Control
+Bob,A,Physical,Headbutt
+Bob,A,Verbal,Insult
+Bob,A,Mental,Mind Control
+Jim,A,Physical,Kick
+Jim,A,Verbal,Insult
+Jim,A,Mental,Mind Control
+Jim,A,Physical,Punch
+Jim,A,Verbal,Sass
+Jane,A,Mental,Mind Control
+Jane,A,Physical,Headbutt
+Jane,A,Verbal,Insult
+Jane,A,Mental,Mind Control
+Jane,A,Physical,Kick
+Kale,B,Verbal,Insult
+Kale,B,Mental,Mind Control
+Wonky,B,Physical,Punch
+Wonky,B,Verbal,Sass
+Wonky,B,Mental,Mind Control
+Wonky,B,Physical,Headbutt
+Wonky,B,Verbal,Insult
+Wonky,B,Mental,Mind Control
+Wonky,B,Physical,Kick
+Potato,B,Verbal,Insult
+Potato,B,Mental,Mind Control
+Potato,B,Physical,Punch
+Bobby,B,Verbal,Sass
+Bobby,B,Mental,Mind Control
+Bobby,B,Physical,Headbutt
+Bobby,B,Verbal,Insult
+Bobby,B,Mental,Mind Control
+Scud,B,Physical,Kick
+Scud,B,Verbal,Insult
+Scud,B,Mental,Mind Control
+Lmao,B,Physical,Punch
+Lmao,B,Verbal,Sass
+Lmao,B,Mental,Mind Control
+Lmao,B,Physical,Headbutt
+Lmao,B,Verbal,Insult
+Lmao,B,Mental,Mind Control
+Leef,B,Physical,Kick
+Leef,B,Verbal,Insult
+Leef,B,Mental,Mind Control
+Leef,B,Physical,Punch
+Who,B,Verbal,Sass
+Who,B,Mental,Mind Control
+Who,B,Physical,Headbutt
+Quip,C,Verbal,Insult
+Quip,C,Mental,Mind Control
+Quip,C,Physical,Kick
+Quip,C,Verbal,Insult
+Quip,C,Mental,Mind Control
+Quip,C,Physical,Punch
+Quip,C,Verbal,Sass
+Mane,C,Mental,Mind Control
+Mane,C,Physical,Headbutt
+Mane,C,Verbal,Insult
+Mane,C,Mental,Mind Control
+Bane,C,Physical,Kick
+Bane,C,Verbal,Insult
+Bane,C,Mental,Mind Control
+Bane,C,Physical,Punch
+Bane,C,Verbal,Sass
+Bane,C,Mental,Mind Control
+Zane,D,Physical,Headbutt
+Zane,D,Verbal,Insult
+Zane,D,Mental,Mind Control
+Zane,D,Physical,Kick
+Zane,D,Verbal,Insult
+Zane,D,Mental,Mind Control
+Rogaine,D,Physical,Punch
+Rogaine,D,Verbal,Sass
+Rogaine,D,Mental,Mind Control
+Rogaine,D,Physical,Headbutt
+Rogaine,D,Verbal,Insult
+Rogaine,D,Mental,Mind Control
+Rogaine,D,Physical,Kick
+Rogaine,D,Verbal,Insult
+Rogaine,D,Mental,Mind Control
+Rogaine,D,Physical,Punch
+Rogaine,D,Verbal,Sass
+Rogaine,D,Mental,Mind Control
+Rogaine,D,Physical,Headbutt
+Rogaine,D,Verbal,Insult
+Rogaine,D,Mental,Mind Control

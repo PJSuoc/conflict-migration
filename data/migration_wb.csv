@@ -1,0 +1,472 @@
+Series Name,Series Code,Country Name,Country Code,2023 [YR2023]
+Net migration,SM.POP.NETM,Africa Eastern and Southern,AFE,-271749
+Net migration,SM.POP.NETM,Africa Western and Central,AFW,-183333
+Net migration,SM.POP.NETM,Arab World,ARB,298369
+Net migration,SM.POP.NETM,Euro area,EMU,311907
+Net migration,SM.POP.NETM,Europe & Central Asia,ECS,409205
+Net migration,SM.POP.NETM,Europe & Central Asia (excluding high income),ECA,1243190
+Net migration,SM.POP.NETM,Europe & Central Asia (IDA & IBRD countries),TEC,-65115
+Net migration,SM.POP.NETM,European Union,EUU,-932653
+Net migration,SM.POP.NETM,Fragile and conflict affected situations,FCS,2227475
+Net migration,SM.POP.NETM,Low & middle income,LMY,-1102366
+Net migration,SM.POP.NETM,Low income,LIC,311966
+Net migration,SM.POP.NETM,Lower middle income,LMC,-2019645
+Net migration,SM.POP.NETM,North America,NAC,1249446
+Net migration,SM.POP.NETM,Pre-demographic dividend,PRE,-538217
+Net migration,SM.POP.NETM,Small states,SST,-29106
+Net migration,SM.POP.NETM,South Asia,SAS,-1175806
+Net migration,SM.POP.NETM,World,WLD,0
+Net migration,SM.POP.NETM,Afghanistan,AFG,-65846
+Net migration,SM.POP.NETM,Albania,ALB,-8000
+Net migration,SM.POP.NETM,Algeria,DZA,-9999
+Net migration,SM.POP.NETM,American Samoa,ASM,-790
+Net migration,SM.POP.NETM,Andorra,AND,200
+Net migration,SM.POP.NETM,Angola,AGO,-1000
+Net migration,SM.POP.NETM,Antigua and Barbuda,ATG,0
+Net migration,SM.POP.NETM,Argentina,ARG,3718
+Net migration,SM.POP.NETM,Armenia,ARM,-5000
+Net migration,SM.POP.NETM,Aruba,ABW,157
+Net migration,SM.POP.NETM,Australia,AUS,139991
+Net migration,SM.POP.NETM,Austria,AUT,19999
+Net migration,SM.POP.NETM,Azerbaijan,AZE,0
+Net migration,SM.POP.NETM,"Bahamas, The",BHS,1000
+Net migration,SM.POP.NETM,Bahrain,BHR,0
+Net migration,SM.POP.NETM,Bangladesh,BGD,-309977
+Net migration,SM.POP.NETM,Barbados,BRB,-80
+Net migration,SM.POP.NETM,Belarus,BLR,-4282
+Net migration,SM.POP.NETM,Belgium,BEL,23999
+Net migration,SM.POP.NETM,Belize,BLZ,600
+Net migration,SM.POP.NETM,Benin,BEN,-200
+Net migration,SM.POP.NETM,Bermuda,BMU,0
+Net migration,SM.POP.NETM,Bhutan,BTN,300
+Net migration,SM.POP.NETM,Bolivia,BOL,-3000
+Net migration,SM.POP.NETM,Bosnia and Herzegovina,BIH,-500
+Net migration,SM.POP.NETM,Botswana,BWA,3000
+Net migration,SM.POP.NETM,Brazil,BRA,6000
+Net migration,SM.POP.NETM,British Virgin Islands,VGB,200
+Net migration,SM.POP.NETM,Brunei Darussalam,BRN,0
+Net migration,SM.POP.NETM,Bulgaria,BGR,-4800
+Net migration,SM.POP.NETM,Burkina Faso,BFA,-24998
+Net migration,SM.POP.NETM,Burundi,BDI,2000
+Net migration,SM.POP.NETM,Cabo Verde,CPV,-1227
+Net migration,SM.POP.NETM,Cambodia,KHM,-29998
+Net migration,SM.POP.NETM,Cameroon,CMR,-4800
+Net migration,SM.POP.NETM,Canada,CAN,249746
+Net migration,SM.POP.NETM,Cayman Islands,CYM,400
+Net migration,SM.POP.NETM,Central African Republic,CAF,-14716
+Net migration,SM.POP.NETM,Chad,TCD,-2000
+Net migration,SM.POP.NETM,Channel Islands,CHI,900
+Net migration,SM.POP.NETM,Chile,CHL,-71205
+Net migration,SM.POP.NETM,China,CHN,-310220
+Net migration,SM.POP.NETM,Colombia,COL,-175051
+Net migration,SM.POP.NETM,Comoros,COM,-2000
+Net migration,SM.POP.NETM,"Congo, Dem. Rep.",COD,-14999
+Net migration,SM.POP.NETM,"Congo, Rep.",COG,-1000
+Net migration,SM.POP.NETM,Costa Rica,CRI,3750
+Net migration,SM.POP.NETM,Cote d'Ivoire,CIV,6000
+Net migration,SM.POP.NETM,Croatia,HRV,-2000
+Net migration,SM.POP.NETM,Cuba,CUB,-6000
+Net migration,SM.POP.NETM,Curacao,CUW,515
+Net migration,SM.POP.NETM,Cyprus,CYP,5000
+Net migration,SM.POP.NETM,Czechia,CZE,22011
+Net migration,SM.POP.NETM,Denmark,DNK,19999
+Net migration,SM.POP.NETM,Djibouti,DJI,900
+Net migration,SM.POP.NETM,Dominica,DMA,-40
+Net migration,SM.POP.NETM,Dominican Republic,DOM,-29099
+Net migration,SM.POP.NETM,Ecuador,ECU,-21525
+Net migration,SM.POP.NETM,"Egypt, Arab Rep.",EGY,-29998
+Net migration,SM.POP.NETM,El Salvador,SLV,-23249
+Net migration,SM.POP.NETM,Equatorial Guinea,GNQ,4000
+Net migration,SM.POP.NETM,Eritrea,ERI,-15297
+Net migration,SM.POP.NETM,Estonia,EST,-1000
+Net migration,SM.POP.NETM,Eswatini,SWZ,-5268
+Net migration,SM.POP.NETM,Ethiopia,ETH,-11999
+Net migration,SM.POP.NETM,Faroe Islands,FRO,0
+Net migration,SM.POP.NETM,Fiji,FJI,-3289
+Net migration,SM.POP.NETM,Finland,FIN,13999
+Net migration,SM.POP.NETM,France,FRA,67761
+Net migration,SM.POP.NETM,French Polynesia,PYF,-100
+Net migration,SM.POP.NETM,Gabon,GAB,1000
+Net migration,SM.POP.NETM,"Gambia, The",GMB,-3000
+Net migration,SM.POP.NETM,Georgia,GEO,-9999
+Net migration,SM.POP.NETM,Germany,DEU,155751
+Net migration,SM.POP.NETM,Ghana,GHA,-9999
+Net migration,SM.POP.NETM,Gibraltar,GIB,-24
+Net migration,SM.POP.NETM,Greece,GRC,5000
+Net migration,SM.POP.NETM,Greenland,GRL,-100
+Net migration,SM.POP.NETM,Grenada,GRD,-200
+Net migration,SM.POP.NETM,Guam,GUM,-500
+Net migration,SM.POP.NETM,Guatemala,GTM,-9110
+Net migration,SM.POP.NETM,Guinea,GIN,-4000
+Net migration,SM.POP.NETM,Guinea-Bissau,GNB,-1400
+Net migration,SM.POP.NETM,Guyana,GUY,-3900
+Net migration,SM.POP.NETM,Haiti,HTI,-31811
+Net migration,SM.POP.NETM,Honduras,HND,-5034
+Net migration,SM.POP.NETM,"Hong Kong SAR, China",HKG,19999
+Net migration,SM.POP.NETM,Hungary,HUN,-156677
+Net migration,SM.POP.NETM,Iceland,ISL,380
+Net migration,SM.POP.NETM,India,IND,-486136
+Net migration,SM.POP.NETM,Indonesia,IDN,-49997
+Net migration,SM.POP.NETM,"Iran, Islamic Rep.",IRN,-39998
+Net migration,SM.POP.NETM,Iraq,IRQ,-6000
+Net migration,SM.POP.NETM,Ireland,IRL,9999
+Net migration,SM.POP.NETM,Israel,ISR,9999
+Net migration,SM.POP.NETM,Italy,ITA,58496
+Net migration,SM.POP.NETM,Jamaica,JAM,-10999
+Net migration,SM.POP.NETM,Japan,JPN,99994
+Net migration,SM.POP.NETM,Jordan,JOR,-157392
+Net migration,SM.POP.NETM,Kazakhstan,KAZ,0
+Net migration,SM.POP.NETM,Kenya,KEN,-10000
+Net migration,SM.POP.NETM,Kiribati,KIR,-400
+Net migration,SM.POP.NETM,"Korea, Dem. People's Rep.",PRK,-2000
+Net migration,SM.POP.NETM,"Korea, Rep.",KOR,29998
+Net migration,SM.POP.NETM,Kosovo,XKX,-5000
+Net migration,SM.POP.NETM,Kuwait,KWT,11999
+Net migration,SM.POP.NETM,Kyrgyz Republic,KGZ,-9999
+Net migration,SM.POP.NETM,Lao PDR,LAO,-9999
+Net migration,SM.POP.NETM,Latvia,LVA,-7630
+Net migration,SM.POP.NETM,Lebanon,LBN,-177331
+Net migration,SM.POP.NETM,Lesotho,LSO,-4000
+Net migration,SM.POP.NETM,Liberia,LBR,-5000
+Net migration,SM.POP.NETM,Libya,LBY,-2000
+Net migration,SM.POP.NETM,Liechtenstein,LIE,150
+Net migration,SM.POP.NETM,Lithuania,LTU,-13128
+Net migration,SM.POP.NETM,Luxembourg,LUX,4883
+Net migration,SM.POP.NETM,"Macao SAR, China",MAC,5000
+Net migration,SM.POP.NETM,Madagascar,MDG,-1500
+Net migration,SM.POP.NETM,Malawi,MWI,-6000
+Net migration,SM.POP.NETM,Malaysia,MYS,48997
+Net migration,SM.POP.NETM,Maldives,MDV,-8652
+Net migration,SM.POP.NETM,Mali,MLI,-39998
+Net migration,SM.POP.NETM,Malta,MLT,850
+Net migration,SM.POP.NETM,Marshall Islands,MHL,0
+Net migration,SM.POP.NETM,Mauritania,MRT,3000
+Net migration,SM.POP.NETM,Mauritius,MUS,0
+Net migration,SM.POP.NETM,Mexico,MEX,-50239
+Net migration,SM.POP.NETM,"Micronesia, Fed. Sts.",FSM,-600
+Net migration,SM.POP.NETM,Moldova,MDA,-125204
+Net migration,SM.POP.NETM,Monaco,MCO,200
+Net migration,SM.POP.NETM,Mongolia,MNG,-850
+Net migration,SM.POP.NETM,Montenegro,MNE,-480
+Net migration,SM.POP.NETM,Morocco,MAR,-39998
+Net migration,SM.POP.NETM,Mozambique,MOZ,-5000
+Net migration,SM.POP.NETM,Myanmar,MMR,-34998
+Net migration,SM.POP.NETM,Namibia,NAM,-3916
+Net migration,SM.POP.NETM,Nauru,NRU,-140
+Net migration,SM.POP.NETM,Nepal,NPL,-62012
+Net migration,SM.POP.NETM,Netherlands,NLD,29998
+Net migration,SM.POP.NETM,New Caledonia,NCL,500
+Net migration,SM.POP.NETM,New Zealand,NZL,12999
+Net migration,SM.POP.NETM,Nicaragua,NIC,-8000
+Net migration,SM.POP.NETM,Niger,NER,1000
+Net migration,SM.POP.NETM,Nigeria,NGA,-59996
+Net migration,SM.POP.NETM,North Macedonia,MKD,-1000
+Net migration,SM.POP.NETM,Northern Mariana Islands,MNP,-50
+Net migration,SM.POP.NETM,Norway,NOR,27998
+Net migration,SM.POP.NETM,Oman,OMN,0
+Net migration,SM.POP.NETM,Pakistan,PAK,-165988
+Net migration,SM.POP.NETM,Palau,PLW,-20
+Net migration,SM.POP.NETM,Panama,PAN,7262
+Net migration,SM.POP.NETM,Papua New Guinea,PNG,-800
+Net migration,SM.POP.NETM,Paraguay,PRY,-12499
+Net migration,SM.POP.NETM,Peru,PER,-61442
+Net migration,SM.POP.NETM,Philippines,PHL,-69996
+Net migration,SM.POP.NETM,Poland,POL,-910475
+Net migration,SM.POP.NETM,Portugal,PRT,9999
+Net migration,SM.POP.NETM,Puerto Rico,PRI,19835
+Net migration,SM.POP.NETM,Qatar,QAT,0
+Net migration,SM.POP.NETM,Romania,ROU,-254616
+Net migration,SM.POP.NETM,Russian Federation,RUS,-136414
+Net migration,SM.POP.NETM,Rwanda,RWA,-8999
+Net migration,SM.POP.NETM,Samoa,WSM,-1500
+Net migration,SM.POP.NETM,San Marino,SMR,100
+Net migration,SM.POP.NETM,Sao Tome and Principe,STP,-600
+Net migration,SM.POP.NETM,Saudi Arabia,SAU,28998
+Net migration,SM.POP.NETM,Senegal,SEN,-19999
+Net migration,SM.POP.NETM,Serbia,SRB,-9999
+Net migration,SM.POP.NETM,Seychelles,SYC,-200
+Net migration,SM.POP.NETM,Sierra Leone,SLE,-4000
+Net migration,SM.POP.NETM,Singapore,SGP,26998
+Net migration,SM.POP.NETM,Sint Maarten (Dutch part),SXM,0
+Net migration,SM.POP.NETM,Slovak Republic,SVK,-112067
+Net migration,SM.POP.NETM,Slovenia,SVN,2000
+Net migration,SM.POP.NETM,Solomon Islands,SLB,-1600
+Net migration,SM.POP.NETM,Somalia,SOM,-30000
+Net migration,SM.POP.NETM,South Africa,ZAF,58496
+Net migration,SM.POP.NETM,South Sudan,SSD,-23291
+Net migration,SM.POP.NETM,Spain,ESP,39998
+Net migration,SM.POP.NETM,Sri Lanka,LKA,-77495
+Net migration,SM.POP.NETM,St. Kitts and Nevis,KNA,20
+Net migration,SM.POP.NETM,St. Lucia,LCA,0
+Net migration,SM.POP.NETM,St. Martin (French part),MAF,0
+Net migration,SM.POP.NETM,St. Vincent and the Grenadines,VCT,-200
+Net migration,SM.POP.NETM,Sudan,SDN,-9999
+Net migration,SM.POP.NETM,Suriname,SUR,-1000
+Net migration,SM.POP.NETM,Sweden,SWE,39998
+Net migration,SM.POP.NETM,Switzerland,CHE,39998
+Net migration,SM.POP.NETM,Syrian Arab Republic,SYR,757103
+Net migration,SM.POP.NETM,Tajikistan,TJK,-19999
+Net migration,SM.POP.NETM,Tanzania,TZA,-39997
+Net migration,SM.POP.NETM,Thailand,THA,18999
+Net migration,SM.POP.NETM,Timor-Leste,TLS,-5000
+Net migration,SM.POP.NETM,Togo,TGO,-2000
+Net migration,SM.POP.NETM,Tonga,TON,-800
+Net migration,SM.POP.NETM,Trinidad and Tobago,TTO,-800
+Net migration,SM.POP.NETM,Tunisia,TUN,-4000
+Net migration,SM.POP.NETM,Turkiye,TUR,-318067
+Net migration,SM.POP.NETM,Turkmenistan,TKM,-4000
+Net migration,SM.POP.NETM,Turks and Caicos Islands,TCA,200
+Net migration,SM.POP.NETM,Tuvalu,TUV,-60
+Net migration,SM.POP.NETM,Uganda,UGA,-126181
+Net migration,SM.POP.NETM,Ukraine,UKR,1784718
+Net migration,SM.POP.NETM,United Arab Emirates,ARE,0
+Net migration,SM.POP.NETM,United Kingdom,GBR,165790
+Net migration,SM.POP.NETM,United States,USA,999700
+Net migration,SM.POP.NETM,Uruguay,URY,-1500
+Net migration,SM.POP.NETM,Uzbekistan,UZB,-19999
+Net migration,SM.POP.NETM,Vanuatu,VUT,0
+Net migration,SM.POP.NETM,"Venezuela, RB",VEN,321106
+Net migration,SM.POP.NETM,Viet Nam,VNM,-82700
+Net migration,SM.POP.NETM,Virgin Islands (U.S.),VIR,-450
+Net migration,SM.POP.NETM,West Bank and Gaza,PSE,-5000
+Net migration,SM.POP.NETM,"Yemen, Rep.",YEM,-29914
+Net migration,SM.POP.NETM,Zambia,ZMB,-5000
+Net migration,SM.POP.NETM,Zimbabwe,ZWE,-9999
+"Population, total",SP.POP.TOTL,Africa Eastern and Southern,AFE,739108306
+"Population, total",SP.POP.TOTL,Africa Western and Central,AFW,502789511
+"Population, total",SP.POP.TOTL,Arab World,ARB,473272080
+"Population, total",SP.POP.TOTL,Euro area,EMU,350357398
+"Population, total",SP.POP.TOTL,Europe & Central Asia,ECS,923929755
+"Population, total",SP.POP.TOTL,Europe & Central Asia (excluding high income),ECA,247474425
+"Population, total",SP.POP.TOTL,Europe & Central Asia (IDA & IBRD countries),TEC,457326090
+"Population, total",SP.POP.TOTL,European Union,EUU,449476878
+"Population, total",SP.POP.TOTL,Fragile and conflict affected situations,FCS,1042703808
+"Population, total",SP.POP.TOTL,Low & middle income,LMY,6593137026
+"Population, total",SP.POP.TOTL,Low income,LIC,722984063
+"Population, total",SP.POP.TOTL,Lower middle income,LMC,3059564861
+"Population, total",SP.POP.TOTL,North America,NAC,375076145
+"Population, total",SP.POP.TOTL,Pre-demographic dividend,PRE,1065710613
+"Population, total",SP.POP.TOTL,Small states,SST,20086203
+"Population, total",SP.POP.TOTL,South Asia,SAS,1938549529
+"Population, total",SP.POP.TOTL,World,WLD,8024997028
+"Population, total",SP.POP.TOTL,Afghanistan,AFG,42239854
+"Population, total",SP.POP.TOTL,Albania,ALB,2745972
+"Population, total",SP.POP.TOTL,Algeria,DZA,45606480
+"Population, total",SP.POP.TOTL,American Samoa,ASM,43914
+"Population, total",SP.POP.TOTL,Andorra,AND,80088
+"Population, total",SP.POP.TOTL,Angola,AGO,36684202
+"Population, total",SP.POP.TOTL,Antigua and Barbuda,ATG,94298
+"Population, total",SP.POP.TOTL,Argentina,ARG,46654581
+"Population, total",SP.POP.TOTL,Armenia,ARM,2777970
+"Population, total",SP.POP.TOTL,Aruba,ABW,106277
+"Population, total",SP.POP.TOTL,Australia,AUS,26638544
+"Population, total",SP.POP.TOTL,Austria,AUT,9132383
+"Population, total",SP.POP.TOTL,Azerbaijan,AZE,10112555
+"Population, total",SP.POP.TOTL,"Bahamas, The",BHS,412623
+"Population, total",SP.POP.TOTL,Bahrain,BHR,1485509
+"Population, total",SP.POP.TOTL,Bangladesh,BGD,172954319
+"Population, total",SP.POP.TOTL,Barbados,BRB,281995
+"Population, total",SP.POP.TOTL,Belarus,BLR,9178298
+"Population, total",SP.POP.TOTL,Belgium,BEL,11822592
+"Population, total",SP.POP.TOTL,Belize,BLZ,410825
+"Population, total",SP.POP.TOTL,Benin,BEN,13712828
+"Population, total",SP.POP.TOTL,Bermuda,BMU,63489
+"Population, total",SP.POP.TOTL,Bhutan,BTN,787424
+"Population, total",SP.POP.TOTL,Bolivia,BOL,12388571
+"Population, total",SP.POP.TOTL,Bosnia and Herzegovina,BIH,3210847
+"Population, total",SP.POP.TOTL,Botswana,BWA,2675352
+"Population, total",SP.POP.TOTL,Brazil,BRA,216422446
+"Population, total",SP.POP.TOTL,British Virgin Islands,VGB,31538
+"Population, total",SP.POP.TOTL,Brunei Darussalam,BRN,452524
+"Population, total",SP.POP.TOTL,Bulgaria,BGR,6430370
+"Population, total",SP.POP.TOTL,Burkina Faso,BFA,23251485
+"Population, total",SP.POP.TOTL,Burundi,BDI,13238559
+"Population, total",SP.POP.TOTL,Cabo Verde,CPV,598682
+"Population, total",SP.POP.TOTL,Cambodia,KHM,16944826
+"Population, total",SP.POP.TOTL,Cameroon,CMR,28647293
+"Population, total",SP.POP.TOTL,Canada,CAN,40097761
+"Population, total",SP.POP.TOTL,Cayman Islands,CYM,69310
+"Population, total",SP.POP.TOTL,Central African Republic,CAF,5742315
+"Population, total",SP.POP.TOTL,Chad,TCD,18278568
+"Population, total",SP.POP.TOTL,Channel Islands,CHI,175346
+"Population, total",SP.POP.TOTL,Chile,CHL,19629590
+"Population, total",SP.POP.TOTL,China,CHN,1410710000
+"Population, total",SP.POP.TOTL,Colombia,COL,52085168
+"Population, total",SP.POP.TOTL,Comoros,COM,852075
+"Population, total",SP.POP.TOTL,"Congo, Dem. Rep.",COD,102262808
+"Population, total",SP.POP.TOTL,"Congo, Rep.",COG,6106869
+"Population, total",SP.POP.TOTL,Costa Rica,CRI,5212173
+"Population, total",SP.POP.TOTL,Cote d'Ivoire,CIV,28873034
+"Population, total",SP.POP.TOTL,Croatia,HRV,3853200
+"Population, total",SP.POP.TOTL,Cuba,CUB,11194449
+"Population, total",SP.POP.TOTL,Curacao,CUW,147862
+"Population, total",SP.POP.TOTL,Cyprus,CYP,1260138
+"Population, total",SP.POP.TOTL,Czechia,CZE,10873689
+"Population, total",SP.POP.TOTL,Denmark,DNK,5946952
+"Population, total",SP.POP.TOTL,Djibouti,DJI,1136455
+"Population, total",SP.POP.TOTL,Dominica,DMA,73040
+"Population, total",SP.POP.TOTL,Dominican Republic,DOM,11332972
+"Population, total",SP.POP.TOTL,Ecuador,ECU,18190484
+"Population, total",SP.POP.TOTL,"Egypt, Arab Rep.",EGY,112716598
+"Population, total",SP.POP.TOTL,El Salvador,SLV,6364943
+"Population, total",SP.POP.TOTL,Equatorial Guinea,GNQ,1714671
+"Population, total",SP.POP.TOTL,Eritrea,ERI,3748901
+"Population, total",SP.POP.TOTL,Estonia,EST,1366188
+"Population, total",SP.POP.TOTL,Eswatini,SWZ,1210822
+"Population, total",SP.POP.TOTL,Ethiopia,ETH,126527060
+"Population, total",SP.POP.TOTL,Faroe Islands,FRO,53270
+"Population, total",SP.POP.TOTL,Fiji,FJI,936375
+"Population, total",SP.POP.TOTL,Finland,FIN,5584264
+"Population, total",SP.POP.TOTL,France,FRA,68170228
+"Population, total",SP.POP.TOTL,French Polynesia,PYF,308872
+"Population, total",SP.POP.TOTL,Gabon,GAB,2436566
+"Population, total",SP.POP.TOTL,"Gambia, The",GMB,2773168
+"Population, total",SP.POP.TOTL,Georgia,GEO,3760365
+"Population, total",SP.POP.TOTL,Germany,DEU,84482267
+"Population, total",SP.POP.TOTL,Ghana,GHA,34121985
+"Population, total",SP.POP.TOTL,Gibraltar,GIB,32688
+"Population, total",SP.POP.TOTL,Greece,GRC,10361295
+"Population, total",SP.POP.TOTL,Greenland,GRL,56865
+"Population, total",SP.POP.TOTL,Grenada,GRD,126183
+"Population, total",SP.POP.TOTL,Guam,GUM,172952
+"Population, total",SP.POP.TOTL,Guatemala,GTM,17602431
+"Population, total",SP.POP.TOTL,Guinea,GIN,14190612
+"Population, total",SP.POP.TOTL,Guinea-Bissau,GNB,2150842
+"Population, total",SP.POP.TOTL,Guyana,GUY,813834
+"Population, total",SP.POP.TOTL,Haiti,HTI,11724763
+"Population, total",SP.POP.TOTL,Honduras,HND,10593798
+"Population, total",SP.POP.TOTL,"Hong Kong SAR, China",HKG,7536100
+"Population, total",SP.POP.TOTL,Hungary,HUN,9589872
+"Population, total",SP.POP.TOTL,Iceland,ISL,393600
+"Population, total",SP.POP.TOTL,India,IND,1428627663
+"Population, total",SP.POP.TOTL,Indonesia,IDN,277534122
+"Population, total",SP.POP.TOTL,"Iran, Islamic Rep.",IRN,89172767
+"Population, total",SP.POP.TOTL,Iraq,IRQ,45504560
+"Population, total",SP.POP.TOTL,Ireland,IRL,5262382
+"Population, total",SP.POP.TOTL,Israel,ISR,9756700
+"Population, total",SP.POP.TOTL,Italy,ITA,58761146
+"Population, total",SP.POP.TOTL,Jamaica,JAM,2825544
+"Population, total",SP.POP.TOTL,Japan,JPN,124516650
+"Population, total",SP.POP.TOTL,Jordan,JOR,11337052
+"Population, total",SP.POP.TOTL,Kazakhstan,KAZ,19900177
+"Population, total",SP.POP.TOTL,Kenya,KEN,55100586
+"Population, total",SP.POP.TOTL,Kiribati,KIR,133515
+"Population, total",SP.POP.TOTL,"Korea, Dem. People's Rep.",PRK,26160821
+"Population, total",SP.POP.TOTL,"Korea, Rep.",KOR,51712619
+"Population, total",SP.POP.TOTL,Kosovo,XKX,1756374
+"Population, total",SP.POP.TOTL,Kuwait,KWT,4310108
+"Population, total",SP.POP.TOTL,Kyrgyz Republic,KGZ,7100800
+"Population, total",SP.POP.TOTL,Lao PDR,LAO,7633779
+"Population, total",SP.POP.TOTL,Latvia,LVA,1881750
+"Population, total",SP.POP.TOTL,Lebanon,LBN,5353930
+"Population, total",SP.POP.TOTL,Lesotho,LSO,2330318
+"Population, total",SP.POP.TOTL,Liberia,LBR,5418377
+"Population, total",SP.POP.TOTL,Libya,LBY,6888388
+"Population, total",SP.POP.TOTL,Liechtenstein,LIE,39584
+"Population, total",SP.POP.TOTL,Lithuania,LTU,2871897
+"Population, total",SP.POP.TOTL,Luxembourg,LUX,668606
+"Population, total",SP.POP.TOTL,"Macao SAR, China",MAC,704149
+"Population, total",SP.POP.TOTL,Madagascar,MDG,30325732
+"Population, total",SP.POP.TOTL,Malawi,MWI,20931751
+"Population, total",SP.POP.TOTL,Malaysia,MYS,34308525
+"Population, total",SP.POP.TOTL,Maldives,MDV,521021
+"Population, total",SP.POP.TOTL,Mali,MLI,23293698
+"Population, total",SP.POP.TOTL,Malta,MLT,553214
+"Population, total",SP.POP.TOTL,Marshall Islands,MHL,41996
+"Population, total",SP.POP.TOTL,Mauritania,MRT,4862989
+"Population, total",SP.POP.TOTL,Mauritius,MUS,1261041
+"Population, total",SP.POP.TOTL,Mexico,MEX,128455567
+"Population, total",SP.POP.TOTL,"Micronesia, Fed. Sts.",FSM,115224
+"Population, total",SP.POP.TOTL,Moldova,MDA,2486891
+"Population, total",SP.POP.TOTL,Monaco,MCO,36297
+"Population, total",SP.POP.TOTL,Mongolia,MNG,3447157
+"Population, total",SP.POP.TOTL,Montenegro,MNE,616177
+"Population, total",SP.POP.TOTL,Morocco,MAR,37840044
+"Population, total",SP.POP.TOTL,Mozambique,MOZ,33897354
+"Population, total",SP.POP.TOTL,Myanmar,MMR,54577997
+"Population, total",SP.POP.TOTL,Namibia,NAM,2604172
+"Population, total",SP.POP.TOTL,Nauru,NRU,12780
+"Population, total",SP.POP.TOTL,Nepal,NPL,30896590
+"Population, total",SP.POP.TOTL,Netherlands,NLD,17879488
+"Population, total",SP.POP.TOTL,New Caledonia,NCL,267940
+"Population, total",SP.POP.TOTL,New Zealand,NZL,5223100
+"Population, total",SP.POP.TOTL,Nicaragua,NIC,7046310
+"Population, total",SP.POP.TOTL,Niger,NER,27202843
+"Population, total",SP.POP.TOTL,Nigeria,NGA,223804632
+"Population, total",SP.POP.TOTL,North Macedonia,MKD,1811980
+"Population, total",SP.POP.TOTL,Northern Mariana Islands,MNP,49796
+"Population, total",SP.POP.TOTL,Norway,NOR,5519594
+"Population, total",SP.POP.TOTL,Oman,OMN,4644384
+"Population, total",SP.POP.TOTL,Pakistan,PAK,240485658
+"Population, total",SP.POP.TOTL,Palau,PLW,18058
+"Population, total",SP.POP.TOTL,Panama,PAN,4468087
+"Population, total",SP.POP.TOTL,Papua New Guinea,PNG,10329931
+"Population, total",SP.POP.TOTL,Paraguay,PRY,6861524
+"Population, total",SP.POP.TOTL,Peru,PER,34352719
+"Population, total",SP.POP.TOTL,Philippines,PHL,117337368
+"Population, total",SP.POP.TOTL,Poland,POL,36685849
+"Population, total",SP.POP.TOTL,Portugal,PRT,10525347
+"Population, total",SP.POP.TOTL,Puerto Rico,PRI,3205691
+"Population, total",SP.POP.TOTL,Qatar,QAT,2716391
+"Population, total",SP.POP.TOTL,Romania,ROU,19056116
+"Population, total",SP.POP.TOTL,Russian Federation,RUS,143826130
+"Population, total",SP.POP.TOTL,Rwanda,RWA,14094683
+"Population, total",SP.POP.TOTL,Samoa,WSM,225681
+"Population, total",SP.POP.TOTL,San Marino,SMR,33642
+"Population, total",SP.POP.TOTL,Sao Tome and Principe,STP,231856
+"Population, total",SP.POP.TOTL,Saudi Arabia,SAU,36947025
+"Population, total",SP.POP.TOTL,Senegal,SEN,17763163
+"Population, total",SP.POP.TOTL,Serbia,SRB,6618026
+"Population, total",SP.POP.TOTL,Seychelles,SYC,119773
+"Population, total",SP.POP.TOTL,Sierra Leone,SLE,8791092
+"Population, total",SP.POP.TOTL,Singapore,SGP,5917648
+"Population, total",SP.POP.TOTL,Sint Maarten (Dutch part),SXM,41163
+"Population, total",SP.POP.TOTL,Slovak Republic,SVK,5426740
+"Population, total",SP.POP.TOTL,Slovenia,SVN,2120937
+"Population, total",SP.POP.TOTL,Solomon Islands,SLB,740424
+"Population, total",SP.POP.TOTL,Somalia,SOM,18143378
+"Population, total",SP.POP.TOTL,South Africa,ZAF,60414495
+"Population, total",SP.POP.TOTL,South Sudan,SSD,11088796
+"Population, total",SP.POP.TOTL,Spain,ESP,48373336
+"Population, total",SP.POP.TOTL,Sri Lanka,LKA,22037000
+"Population, total",SP.POP.TOTL,St. Kitts and Nevis,KNA,47755
+"Population, total",SP.POP.TOTL,St. Lucia,LCA,180251
+"Population, total",SP.POP.TOTL,St. Martin (French part),MAF,32077
+"Population, total",SP.POP.TOTL,St. Vincent and the Grenadines,VCT,103698
+"Population, total",SP.POP.TOTL,Sudan,SDN,48109006
+"Population, total",SP.POP.TOTL,Suriname,SUR,623236
+"Population, total",SP.POP.TOTL,Sweden,SWE,10536632
+"Population, total",SP.POP.TOTL,Switzerland,CHE,8849852
+"Population, total",SP.POP.TOTL,Syrian Arab Republic,SYR,23227014
+"Population, total",SP.POP.TOTL,Tajikistan,TJK,10143543
+"Population, total",SP.POP.TOTL,Tanzania,TZA,67438106
+"Population, total",SP.POP.TOTL,Thailand,THA,71801279
+"Population, total",SP.POP.TOTL,Timor-Leste,TLS,1360596
+"Population, total",SP.POP.TOTL,Togo,TGO,9053799
+"Population, total",SP.POP.TOTL,Tonga,TON,107773
+"Population, total",SP.POP.TOTL,Trinidad and Tobago,TTO,1534937
+"Population, total",SP.POP.TOTL,Tunisia,TUN,12458223
+"Population, total",SP.POP.TOTL,Turkiye,TUR,85326000
+"Population, total",SP.POP.TOTL,Turkmenistan,TKM,6516100
+"Population, total",SP.POP.TOTL,Turks and Caicos Islands,TCA,46062
+"Population, total",SP.POP.TOTL,Tuvalu,TUV,11396
+"Population, total",SP.POP.TOTL,Uganda,UGA,48582334
+"Population, total",SP.POP.TOTL,Ukraine,UKR,37000000
+"Population, total",SP.POP.TOTL,United Arab Emirates,ARE,9516871
+"Population, total",SP.POP.TOTL,United Kingdom,GBR,68350000
+"Population, total",SP.POP.TOTL,United States,USA,334914895
+"Population, total",SP.POP.TOTL,Uruguay,URY,3423108
+"Population, total",SP.POP.TOTL,Uzbekistan,UZB,36412350
+"Population, total",SP.POP.TOTL,Vanuatu,VUT,334506
+"Population, total",SP.POP.TOTL,"Venezuela, RB",VEN,28838499
+"Population, total",SP.POP.TOTL,Viet Nam,VNM,98858950
+"Population, total",SP.POP.TOTL,Virgin Islands (U.S.),VIR,104917
+"Population, total",SP.POP.TOTL,West Bank and Gaza,PSE,5165775
+"Population, total",SP.POP.TOTL,"Yemen, Rep.",YEM,34449825
+"Population, total",SP.POP.TOTL,Zambia,ZMB,20569737
+"Population, total",SP.POP.TOTL,Zimbabwe,ZWE,16665409
+,,,,
+,,,,
+,,,,
+Data from database: Population estimates and projections,,,,
+Last Updated: 07/01/2024,,,,

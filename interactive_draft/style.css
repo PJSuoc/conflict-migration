@@ -1,0 +1,16 @@
+body {
+    text-align: center;
+    border: solid;
+    border-width: 4px;
+    border-color: darkgrey;
+    padding: 2em;
+    font-family: sans-serif;
+}
+
+.interactive {
+    margin: auto;
+    border: solid;
+    border-width: 2px;
+    border-color: black;
+    background-color: lightgrey;
+}

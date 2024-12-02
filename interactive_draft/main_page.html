@@ -1,0 +1,227 @@
+<html>
+<head>
+    <link href="style.css" rel="stylesheet" />
+    <script src="d3.v7.js"></script>
+    <!--<script src="bubble_chart.js"></script>-->
+</head>
+
+
+<body>
+    <section>
+        <h2>Bubble Chart of Violence</h2>
+        <p>Highlighting conflicts outside major areas</p>
+    </section>
+    <section>
+        <select id="region_drop"></select>
+        <select id="event_type_drop"></select>
+        <div class="interactive" id="bubble"></div>
+    </section>
+    
+    <script>
+
+        // Sample Data
+        const data = [{"Country": "Rogaine", "Region": "D", "event_type": "Mental", "sub_event_type": "Mind Control", "violent_events": 5}, {"Country": "Rogaine", "Region": "D", "event_type": "Verbal", "sub_event_type": "Insult", "violent_events": 3}, {"Country": "Jane", "Region": "A", "event_type": "Mental", "sub_event_type": "Mind Control", "violent_events": 2}, {"Country": "Bobby", "Region": "B", "event_type": "Mental", "sub_event_type": "Mind Control", "violent_events": 2}, {"Country": "Bane", "Region": "C", "event_type": "Mental", "sub_event_type": "Mind Control", "violent_events": 2}, {"Country": "Bob", "Region": "A", "event_type": "Mental", "sub_event_type": "Mind Control", "violent_events": 2}, {"Country": "Wonky", "Region": "B", "event_type": "Mental", "sub_event_type": "Mind Control", "violent_events": 2}, {"Country": "Rogaine", "Region": "D", "event_type": "Physical", "sub_event_type": "Punch", "violent_events": 2}, {"Country": "Rogaine", "Region": "D", "event_type": "Verbal", "sub_event_type": "Sass", "violent_events": 2}, {"Country": "Quip", "Region": "C", "event_type": "Verbal", "sub_event_type": "Insult", "violent_events": 2}, {"Country": "Rogaine", "Region": "D", "event_type": "Physical", "sub_event_type": "Headbutt", "violent_events": 2}, {"Country": "Quip", "Region": "C", "event_type": "Mental", "sub_event_type": "Mind Control", "violent_events": 2}, {"Country": "Person", "Region": "B", "event_type": "Mental", "sub_event_type": "Mind Control", "violent_events": 2}, {"Country": "Mane", "Region": "C", "event_type": "Mental", "sub_event_type": "Mind Control", "violent_events": 2}, {"Country": "Zane", "Region": "D", "event_type": "Mental", "sub_event_type": "Mind Control", "violent_events": 2}, {"Country": "Zane", "Region": "D", "event_type": "Verbal", "sub_event_type": "Insult", "violent_events": 2}, {"Country": "Bane", "Region": "C", "event_type": "Physical", "sub_event_type": "Punch", "violent_events": 1}, {"Country": "Bane", "Region": "C", "event_type": "Physical", "sub_event_type": "Kick", "violent_events": 1}, {"Country": "Bane", "Region": "C", "event_type": "Verbal", "sub_event_type": "Sass", "violent_events": 1}, {"Country": "Bane", "Region": "C", "event_type": "Verbal", "sub_event_type": "Insult", "violent_events": 1}, {"Country": "Bob", "Region": "A", "event_type": "Verbal", "sub_event_type": "Sass", "violent_events": 1}, {"Country": "Bobby", "Region": "B", "event_type": "Physical", "sub_event_type": "Headbutt", "violent_events": 1}, {"Country": "Jim", "Region": "A", "event_type": "Verbal", "sub_event_type": "Sass", "violent_events": 1}, {"Country": "Jim", "Region": "A", "event_type": "Verbal", "sub_event_type": "Insult", "violent_events": 1}, {"Country": "Joe", "Region": "A", "event_type": "Mental", "sub_event_type": "Mind Control", "violent_events": 1}, {"Country": "Joe", "Region": "A", "event_type": "Physical", "sub_event_type": "Kick", "violent_events": 1}, {"Country": "Kale", "Region": "B", "event_type": "Mental", "sub_event_type": "Mind Control", "violent_events": 1}, {"Country": "Kale", "Region": "B", "event_type": "Verbal", "sub_event_type": "Insult", "violent_events": 1}, {"Country": "Bob", "Region": "A", "event_type": "Verbal", "sub_event_type": "Insult", "violent_events": 1}, {"Country": "Bob", "Region": "A", "event_type": "Physical", "sub_event_type": "Headbutt", "violent_events": 1}, {"Country": "Jane", "Region": "A", "event_type": "Physical", "sub_event_type": "Headbutt", "violent_events": 1}, {"Country": "Jane", "Region": "A", "event_type": "Physical", "sub_event_type": "Kick", "violent_events": 1}, {"Country": "Jane", "Region": "A", "event_type": "Verbal", "sub_event_type": "Insult", "violent_events": 1}, {"Country": "Jim", "Region": "A", "event_type": "Mental", "sub_event_type": "Mind Control", "violent_events": 1}, {"Country": "Jim", "Region": "A", "event_type": "Physical", "sub_event_type": "Kick", "violent_events": 1}, {"Country": "Jim", "Region": "A", "event_type": "Physical", "sub_event_type": "Punch", "violent_events": 1}, {"Country": "Bobby", "Region": "B", "event_type": "Verbal", "sub_event_type": "Insult", "violent_events": 1}, {"Country": "Bobby", "Region": "B", "event_type": "Verbal", "sub_event_type": "Sass", "violent_events": 1}, {"Country": "Person", "Region": "B", "event_type": "Verbal", "sub_event_type": "Sass", "violent_events": 1}, {"Country": "Person", "Region": "B", "event_type": "Verbal", "sub_event_type": "Insult", "violent_events": 1}, {"Country": "Person", "Region": "B", "event_type": "Physical", "sub_event_type": "Punch", "violent_events": 1}, {"Country": "Person", "Region": "B", "event_type": "Physical", "sub_event_type": "Headbutt", "violent_events": 1}, {"Country": "Leef", "Region": "B", "event_type": "Physical", "sub_event_type": "Punch", "violent_events": 1}, {"Country": "Leef", "Region": "B", "event_type": "Verbal", "sub_event_type": "Insult", "violent_events": 1}, {"Country": "Leef", "Region": "B", "event_type": "Mental", "sub_event_type": "Mind Control", "violent_events": 1}, {"Country": "Leef", "Region": "B", "event_type": "Physical", "sub_event_type": "Kick", "violent_events": 1}, {"Country": "Joe", "Region": "A", "event_type": "Verbal", "sub_event_type": "Insult", "violent_events": 1}, {"Country": "Joe", "Region": "A", "event_type": "Physical", "sub_event_type": "Punch", "violent_events": 1}, {"Country": "Quip", "Region": "C", "event_type": "Physical", "sub_event_type": "Punch", "violent_events": 1}, {"Country": "Potato", "Region": "B", "event_type": "Physical", "sub_event_type": "Punch", "violent_events": 1}, {"Country": "Mane", "Region": "C", "event_type": "Verbal", "sub_event_type": "Insult", "violent_events": 1}, {"Country": "Quip", "Region": "C", "event_type": "Physical", "sub_event_type": "Kick", "violent_events": 1}, {"Country": "Potato", "Region": "B", "event_type": "Verbal", "sub_event_type": "Insult", "violent_events": 1}, {"Country": "Mane", "Region": "C", "event_type": "Physical", "sub_event_type": "Headbutt", "violent_events": 1}, {"Country": "Rogaine", "Region": "D", "event_type": "Physical", "sub_event_type": "Kick", "violent_events": 1}, {"Country": "Quip", "Region": "C", "event_type": "Verbal", "sub_event_type": "Sass", "violent_events": 1}, {"Country": "Potato", "Region": "B", "event_type": "Mental", "sub_event_type": "Mind Control", "violent_events": 1}, {"Country": "Scud", "Region": "B", "event_type": "Mental", "sub_event_type": "Mind Control", "violent_events": 1}, {"Country": "Who", "Region": "B", "event_type": "Mental", "sub_event_type": "Mind Control", "violent_events": 1}, {"Country": "Who", "Region": "B", "event_type": "Physical", "sub_event_type": "Headbutt", "violent_events": 1}, {"Country": "Scud", "Region": "B", "event_type": "Verbal", "sub_event_type": "Insult", "violent_events": 1}, {"Country": "Scud", "Region": "B", "event_type": "Physical", "sub_event_type": "Kick", "violent_events": 1}, {"Country": "Wonky", "Region": "B", "event_type": "Physical", "sub_event_type": "Headbutt", "violent_events": 1}, {"Country": "Who", "Region": "B", "event_type": "Verbal", "sub_event_type": "Sass", "violent_events": 1}, {"Country": "Wonky", "Region": "B", "event_type": "Physical", "sub_event_type": "Kick", "violent_events": 1}, {"Country": "Wonky", "Region": "B", "event_type": "Physical", "sub_event_type": "Punch", "violent_events": 1}, {"Country": "Wonky", "Region": "B", "event_type": "Verbal", "sub_event_type": "Sass", "violent_events": 1}, {"Country": "Wonky", "Region": "B", "event_type": "Verbal", "sub_event_type": "Insult", "violent_events": 1}, {"Country": "Zane", "Region": "D", "event_type": "Physical", "sub_event_type": "Headbutt", "violent_events": 1}, {"Country": "Zane", "Region": "D", "event_type": "Physical", "sub_event_type": "Kick", "violent_events": 1}];
+        const deepdata = {"B": {"violent_events": 33, "Wonky": {"violent_events": 7}, "Person": {"violent_events": 6}, "Bobby": {"violent_events": 5}, "Leef": {"violent_events": 4}, "Scud": {"violent_events": 3}, "Potato": {"violent_events": 3}, "Who": {"violent_events": 3}, "Kale": {"violent_events": 2}}, "D": {"violent_events": 21, "Rogaine": {"violent_events": 15}, "Zane": {"violent_events": 6}}, "A": {"violent_events": 19, "Bob": {"violent_events": 5}, "Jim": {"violent_events": 5}, "Jane": {"violent_events": 5}, "Joe": {"violent_events": 4}}, "C": {"violent_events": 17, "Quip": {"violent_events": 7}, "Bane": {"violent_events": 6}, "Mane": {"violent_events": 4}}};
+        const region_list = ['All', 'A','B','C','D'];
+        const event_type_list = ['All', 'Physical', 'Verbal', 'Mental'];
+
+        async function getData() {
+            const url = "file://acledArray.json";
+            try {
+                const response = await fetch(url);
+                if (!response.ok) {
+                throw new Error(`Response status: ${response.status}`);
+                }
+                const json = await response.json();
+                console.log(json);
+            } catch (error) {
+                console.error(error.message);
+            }
+            return json
+            }
+        //const realdata = getData()
+        //console.log(realdata);
+        
+        // constant setting section
+        const width = 800;
+        const height = 600;
+        const margin = 1;
+
+        const pack = d3.pack()
+            .size([width - margin * 2, height - margin * 2])
+            .padding(3);
+        console.log(typeof(data));
+
+        // INTERACTIVE DATA SORTING
+        function dataSort (data, region_sel, event_sel) {
+            const event_sort = event_sel;
+            const region_sort = region_sel;
+            let filter_data = [];
+            //console.log("before", data);
+            if (event_sort !== 'All') {
+                filter_data = data.filter(data => data.event_type == event_sort);
+            } else {
+                filter_data = data;
+            };
+            //console.log("post-event", filter_data)
+            if (region_sort !== 'All') {
+                filter_data = filter_data.filter(data => data.Region == region_sort);
+            } else {
+                filter_data = filter_data;
+            };
+
+            //console.log("post-region", filter_data);
+            let country_agg = Object.groupBy(filter_data, (({ Country }) => Country));
+
+            let out_data = [];
+            for (const [key, value] of Object.entries(country_agg)) {
+                new_obj = {};
+                new_obj.Country = key;
+                new_obj.violent_events = 0;
+                for (let events of value) {
+                    new_obj.violent_events = new_obj.violent_events + events.violent_events
+                };
+                out_data.push(new_obj);
+            };
+            return out_data;
+        };
+
+        // Creating Bubble Chart
+        out_data = dataSort(data, 'All', 'All')
+        const root = pack(d3.hierarchy({children: out_data})
+            .sum(d => d.violent_events));
+
+        const color = d3.scaleOrdinal(d3.schemeTableau10);
+
+        //console.log(root);
+
+        const bubble = d3
+            .select("#bubble")
+            .append("svg")
+            .attr("width", width)
+            .attr("height", height)
+            .attr("viewBox", [-margin, -margin, width, height])
+            .attr("style", "max-width: 100%; height: auto; font: 10px sans-serif;")
+            .attr("text-anchor", "middle");
+        
+
+        const node = bubble.append("g")
+            .selectAll()
+            .data(root.leaves())
+            .join("g")
+                .attr("transform", d => `translate(${d.x},${d.y})`);
+
+        const region = d => d.Country;
+        console.log(region(root.leaves()));
+        const circles = node.append("circle")
+            .attr("fill-opacity", 0.7)
+            .attr("fill", d => color(region(d.data)))
+            .attr("r", d => d.r);
+
+            console.log(data[2].Country)
+        // TEXT LABELS
+        const text = node.append("text")
+            .attr("clip-path", d => `circle(${d.r})`)
+            .text(d => d.data.Country)
+            .attr("x", 0)
+            .attr("y", 0);
+
+        console.log("Test",text)
+
+        const tooltip = d3.select("body")
+            .append("div")
+            .style("position", "absolute")
+            .style("z-index", "10")
+            .style("visibility", "hidden")
+            .style("background", "#000")
+            .text("yo?");
+
+        bubble.selectAll('circle')
+        .on("mouseover", function(){return tooltip.style("visibility", "visible");})
+        .on("mousemove", function(){return tooltip.style("top", d3.select(this).attr("y")).style("left",d3.select(this).attr("x"));})
+        .on("mouseout", function(){return tooltip.style("visibility", "hidden");});
+        
+
+        // Region Dropdown
+        d3.select("#region_drop")
+            .selectAll('myOptions')
+                .data(region_list)
+            .enter()
+                .append('option')
+            .text(function (d) { return d; })
+            .attr("value", function (d) { return d; })
+        //Event Type Dropdown
+        d3.select("#event_type_drop")
+            .selectAll('myOptions')
+                .data(event_type_list)
+            .enter()
+                .append('option')
+            .text(function (d) { return d; })
+            .attr("value", function (d) { return d; })
+
+        function update(data, region_sel, event_sel) {
+            // Create new data with the selection?
+            console.log("Check:",region_sel, event_sel)
+            const out_data = dataSort(data, region_sel, event_sel)
+
+            const out_root = pack(d3.hierarchy({children: out_data})
+            .sum(d => d.violent_events));
+
+            const newgroup = d => d.Country;
+            console.log(out_root)
+            // Give these new data to update chart
+            node.selectAll("g").remove();
+            node.selectAll('circle').remove();
+            node.selectAll('text').remove();
+
+            console.log("whats up", node)
+            node
+                bubble.append("g")
+                .selectAll("g")
+                .data(out_root.leaves())
+                .join("g")
+                    .attr("transform", d => `translate(${d.x},${d.y})`);
+            console.log("Checkhere", node)
+
+            circles
+                node.append('circle')
+                .data(out_root.leaves())
+                //.transition()
+                //.duration(1000)
+                .join('circle')
+                    .attr("fill-opacity", 0.7)
+                    .attr("fill", d => color(newgroup(d.data)))
+                    .attr("r", d => d.r)
+            console.log(out_root.leaves())
+            const testing = out_root.leaves()
+            console.log(typeof(testing[1].data.Country))
+            
+            text 
+                node.append("text")
+                    .attr("clip-path", d => `circle(${d.r})`)
+                    .text(d => d.data.Country)
+                    .attr("x", 0)
+                    .attr("y", 0);
+                    
+            }
+            
+            console.log(node)
+        // Interactive Selection
+        d3.select("#region_drop").on("change", function(event,d) {
+            // recover the option that has been chosen
+            const region_sel = d3.select(this).property("value")
+            const event_sel = d3.select('#event_type_drop').property("value")
+            // run the updateChart function with this selected option
+            update(data, region_sel, event_sel)
+            })
+        d3.select("#event_type_drop").on("change", function(event,d) {
+            // recover the option that has been chosen
+            const region_sel = d3.select('#region_drop').property("value")
+            const event_sel = d3.select(this).property("value")
+            // run the updateChart function with this selected option
+            update(data, region_sel, event_sel)
+            })
+    </script>
+    
+</body>
+</html>
