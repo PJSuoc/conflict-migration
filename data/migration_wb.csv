@@ -1,21 +1,4 @@
 Series Name,Series Code,Country Name,Country Code,2023 [YR2023]
-Net migration,SM.POP.NETM,Africa Eastern and Southern,AFE,-271749
-Net migration,SM.POP.NETM,Africa Western and Central,AFW,-183333
-Net migration,SM.POP.NETM,Arab World,ARB,298369
-Net migration,SM.POP.NETM,Euro area,EMU,311907
-Net migration,SM.POP.NETM,Europe & Central Asia,ECS,409205
-Net migration,SM.POP.NETM,Europe & Central Asia (excluding high income),ECA,1243190
-Net migration,SM.POP.NETM,Europe & Central Asia (IDA & IBRD countries),TEC,-65115
-Net migration,SM.POP.NETM,European Union,EUU,-932653
-Net migration,SM.POP.NETM,Fragile and conflict affected situations,FCS,2227475
-Net migration,SM.POP.NETM,Low & middle income,LMY,-1102366
-Net migration,SM.POP.NETM,Low income,LIC,311966
-Net migration,SM.POP.NETM,Lower middle income,LMC,-2019645
-Net migration,SM.POP.NETM,North America,NAC,1249446
-Net migration,SM.POP.NETM,Pre-demographic dividend,PRE,-538217
-Net migration,SM.POP.NETM,Small states,SST,-29106
-Net migration,SM.POP.NETM,South Asia,SAS,-1175806
-Net migration,SM.POP.NETM,World,WLD,0
 Net migration,SM.POP.NETM,Afghanistan,AFG,-65846
 Net migration,SM.POP.NETM,Albania,ALB,-8000
 Net migration,SM.POP.NETM,Algeria,DZA,-9999
@@ -60,7 +43,7 @@ Net migration,SM.POP.NETM,Chile,CHL,-71205
 Net migration,SM.POP.NETM,China,CHN,-310220
 Net migration,SM.POP.NETM,Colombia,COL,-175051
 Net migration,SM.POP.NETM,Comoros,COM,-2000
-Net migration,SM.POP.NETM,"Congo, Dem. Rep.",COD,-14999
+Net migration,SM.POP.NETM,D.R. Congo,COD,-14999
 Net migration,SM.POP.NETM,"Congo, Rep.",COG,-1000
 Net migration,SM.POP.NETM,Costa Rica,CRI,3750
 Net migration,SM.POP.NETM,Cote d'Ivoire,CIV,6000
@@ -176,7 +159,7 @@ Net migration,SM.POP.NETM,Portugal,PRT,9999
 Net migration,SM.POP.NETM,Puerto Rico,PRI,19835
 Net migration,SM.POP.NETM,Qatar,QAT,0
 Net migration,SM.POP.NETM,Romania,ROU,-254616
-Net migration,SM.POP.NETM,Russian Federation,RUS,-136414
+Net migration,SM.POP.NETM,Russia,RUS,-136414
 Net migration,SM.POP.NETM,Rwanda,RWA,-8999
 Net migration,SM.POP.NETM,Samoa,WSM,-1500
 Net migration,SM.POP.NETM,San Marino,SMR,100
@@ -204,7 +187,7 @@ Net migration,SM.POP.NETM,Sudan,SDN,-9999
 Net migration,SM.POP.NETM,Suriname,SUR,-1000
 Net migration,SM.POP.NETM,Sweden,SWE,39998
 Net migration,SM.POP.NETM,Switzerland,CHE,39998
-Net migration,SM.POP.NETM,Syrian Arab Republic,SYR,757103
+Net migration,SM.POP.NETM,Syria,SYR,757103
 Net migration,SM.POP.NETM,Tajikistan,TJK,-19999
 Net migration,SM.POP.NETM,Tanzania,TZA,-39997
 Net migration,SM.POP.NETM,Thailand,THA,18999
@@ -213,7 +196,7 @@ Net migration,SM.POP.NETM,Togo,TGO,-2000
 Net migration,SM.POP.NETM,Tonga,TON,-800
 Net migration,SM.POP.NETM,Trinidad and Tobago,TTO,-800
 Net migration,SM.POP.NETM,Tunisia,TUN,-4000
-Net migration,SM.POP.NETM,Turkiye,TUR,-318067
+Net migration,SM.POP.NETM,Turkey,TUR,-318067
 Net migration,SM.POP.NETM,Turkmenistan,TKM,-4000
 Net migration,SM.POP.NETM,Turks and Caicos Islands,TCA,200
 Net migration,SM.POP.NETM,Tuvalu,TUV,-60
@@ -228,8 +211,8 @@ Net migration,SM.POP.NETM,Vanuatu,VUT,0
 Net migration,SM.POP.NETM,"Venezuela, RB",VEN,321106
 Net migration,SM.POP.NETM,Viet Nam,VNM,-82700
 Net migration,SM.POP.NETM,Virgin Islands (U.S.),VIR,-450
-Net migration,SM.POP.NETM,West Bank and Gaza,PSE,-5000
-Net migration,SM.POP.NETM,"Yemen, Rep.",YEM,-29914
+Net migration,SM.POP.NETM,Palestine,PSE,-5000
+Net migration,SM.POP.NETM,Yemen,YEM,-29914
 Net migration,SM.POP.NETM,Zambia,ZMB,-5000
 Net migration,SM.POP.NETM,Zimbabwe,ZWE,-9999
 "Population, total",SP.POP.TOTL,Africa Eastern and Southern,AFE,739108306
@@ -293,7 +276,7 @@ Net migration,SM.POP.NETM,Zimbabwe,ZWE,-9999
 "Population, total",SP.POP.TOTL,China,CHN,1410710000
 "Population, total",SP.POP.TOTL,Colombia,COL,52085168
 "Population, total",SP.POP.TOTL,Comoros,COM,852075
-"Population, total",SP.POP.TOTL,"Congo, Dem. Rep.",COD,102262808
+"Population, total",SP.POP.TOTL,D.R. Congo,COD,102262808
 "Population, total",SP.POP.TOTL,"Congo, Rep.",COG,6106869
 "Population, total",SP.POP.TOTL,Costa Rica,CRI,5212173
 "Population, total",SP.POP.TOTL,Cote d'Ivoire,CIV,28873034
@@ -409,7 +392,7 @@ Net migration,SM.POP.NETM,Zimbabwe,ZWE,-9999
 "Population, total",SP.POP.TOTL,Puerto Rico,PRI,3205691
 "Population, total",SP.POP.TOTL,Qatar,QAT,2716391
 "Population, total",SP.POP.TOTL,Romania,ROU,19056116
-"Population, total",SP.POP.TOTL,Russian Federation,RUS,143826130
+"Population, total",SP.POP.TOTL,Russia,RUS,143826130
 "Population, total",SP.POP.TOTL,Rwanda,RWA,14094683
 "Population, total",SP.POP.TOTL,Samoa,WSM,225681
 "Population, total",SP.POP.TOTL,San Marino,SMR,33642
@@ -437,7 +420,7 @@ Net migration,SM.POP.NETM,Zimbabwe,ZWE,-9999
 "Population, total",SP.POP.TOTL,Suriname,SUR,623236
 "Population, total",SP.POP.TOTL,Sweden,SWE,10536632
 "Population, total",SP.POP.TOTL,Switzerland,CHE,8849852
-"Population, total",SP.POP.TOTL,Syrian Arab Republic,SYR,23227014
+"Population, total",SP.POP.TOTL,Syria,SYR,23227014
 "Population, total",SP.POP.TOTL,Tajikistan,TJK,10143543
 "Population, total",SP.POP.TOTL,Tanzania,TZA,67438106
 "Population, total",SP.POP.TOTL,Thailand,THA,71801279
@@ -446,7 +429,7 @@ Net migration,SM.POP.NETM,Zimbabwe,ZWE,-9999
 "Population, total",SP.POP.TOTL,Tonga,TON,107773
 "Population, total",SP.POP.TOTL,Trinidad and Tobago,TTO,1534937
 "Population, total",SP.POP.TOTL,Tunisia,TUN,12458223
-"Population, total",SP.POP.TOTL,Turkiye,TUR,85326000
+"Population, total",SP.POP.TOTL,Turkey,TUR,85326000
 "Population, total",SP.POP.TOTL,Turkmenistan,TKM,6516100
 "Population, total",SP.POP.TOTL,Turks and Caicos Islands,TCA,46062
 "Population, total",SP.POP.TOTL,Tuvalu,TUV,11396
@@ -461,8 +444,8 @@ Net migration,SM.POP.NETM,Zimbabwe,ZWE,-9999
 "Population, total",SP.POP.TOTL,"Venezuela, RB",VEN,28838499
 "Population, total",SP.POP.TOTL,Viet Nam,VNM,98858950
 "Population, total",SP.POP.TOTL,Virgin Islands (U.S.),VIR,104917
-"Population, total",SP.POP.TOTL,West Bank and Gaza,PSE,5165775
-"Population, total",SP.POP.TOTL,"Yemen, Rep.",YEM,34449825
+"Population, total",SP.POP.TOTL,Palestine,PSE,5165775
+"Population, total",SP.POP.TOTL,Yemen,YEM,34449825
 "Population, total",SP.POP.TOTL,Zambia,ZMB,20569737
 "Population, total",SP.POP.TOTL,Zimbabwe,ZWE,16665409
 ,,,,

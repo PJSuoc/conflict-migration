@@ -1,0 +1,145 @@
+Country,Region,event_type,conflict_size,violent_events
+Ukraine,Europe,Explosions/Remote violence,Ukraine/Russia,40204
+Ukraine,Europe,Battles,Ukraine/Russia,10026
+Syria,Middle East,Explosions/Remote violence,Rest of the World,5553
+Mexico,Americas,Violence against civilians,Rest of the World,4932
+Palestine,Middle East,Riots,Palestine,4522
+Brazil,Americas,Violence against civilians,Rest of the World,4309
+Brazil,Americas,Battles,Rest of the World,4290
+Myanmar,Asia,Battles,Rest of the World,3982
+Myanmar,Asia,Explosions/Remote violence,Rest of the World,3679
+Palestine,Middle East,Explosions/Remote violence,Palestine,3383
+Iraq,Middle East,Explosions/Remote violence,Rest of the World,3222
+Ukraine,Europe,Strategic developments,Ukraine/Russia,3013
+Russia,Europe,Explosions/Remote violence,Ukraine/Russia,2820
+Syria,Middle East,Battles,Rest of the World,2618
+Sudan,Africa,Battles,Rest of the World,2427
+India,Asia,Riots,Rest of the World,2374
+Myanmar,Asia,Strategic developments,Rest of the World,2330
+Syria,Middle East,Violence against civilians,Rest of the World,1991
+Lebanon,Middle East,Explosions/Remote violence,Palestine,1921
+Nigeria,Africa,Violence against civilians,Rest of the World,1878
+Palestine,Middle East,Battles,Palestine,1852
+Somalia,Africa,Battles,Rest of the World,1712
+Myanmar,Asia,Violence against civilians,Rest of the World,1671
+Colombia,Americas,Violence against civilians,Rest of the World,1596
+Cameroon,Africa,Violence against civilians,Rest of the World,1500
+Yemen,Middle East,Explosions/Remote violence,Rest of the World,1402
+Mexico,Americas,Battles,Rest of the World,1331
+Iraq,Middle East,Battles,Rest of the World,1255
+Nigeria,Africa,Battles,Rest of the World,1189
+Bangladesh,Asia,Riots,Rest of the World,1041
+Cameroon,Africa,Battles,Rest of the World,1028
+Sudan,Africa,Explosions/Remote violence,Rest of the World,1021
+D.R. Congo,Africa,Battles,Rest of the World,1010
+Yemen,Middle East,Battles,Rest of the World,987
+Sudan,Africa,Violence against civilians,Rest of the World,985
+India,Asia,Violence against civilians,Rest of the World,905
+Palestine,Middle East,Strategic developments,Palestine,889
+India,Asia,Strategic developments,Rest of the World,889
+Palestine,Middle East,Violence against civilians,Palestine,860
+Turkey,Middle East,Strategic developments,Rest of the World,844
+France,Europe,Riots,Rest of the World,833
+D.R. Congo,Africa,Violence against civilians,Rest of the World,809
+Ethiopia,Africa,Battles,Rest of the World,809
+Kenya,Africa,Riots,Rest of the World,759
+Mali,Africa,Violence against civilians,Rest of the World,744
+Guatemala,Americas,Violence against civilians,Rest of the World,730
+South Africa,Africa,Riots,Rest of the World,727
+Israel,Middle East,Explosions/Remote violence,Palestine,695
+Cameroon,Africa,Strategic developments,Rest of the World,692
+Mexico,Americas,Strategic developments,Rest of the World,677
+Pakistan,Asia,Battles,Rest of the World,669
+Somalia,Africa,Explosions/Remote violence,Rest of the World,666
+Yemen,Middle East,Violence against civilians,Rest of the World,666
+Colombia,Americas,Battles,Rest of the World,657
+Burkina Faso,Africa,Battles,Rest of the World,647
+Burkina Faso,Africa,Violence against civilians,Rest of the World,610
+Mexico,Americas,Riots,Rest of the World,591
+Russia,Europe,Strategic developments,Ukraine/Russia,584
+Brazil,Americas,Riots,Rest of the World,531
+Colombia,Americas,Riots,Rest of the World,529
+Haiti,Americas,Violence against civilians,Rest of the World,527
+Iraq,Middle East,Strategic developments,Rest of the World,520
+India,Asia,Battles,Rest of the World,501
+Ethiopia,Africa,Violence against civilians,Rest of the World,488
+Afghanistan,Asia,Violence against civilians,Rest of the World,481
+Israel,Middle East,Strategic developments,Palestine,476
+Mali,Africa,Battles,Rest of the World,467
+Sudan,Africa,Strategic developments,Rest of the World,458
+Burkina Faso,Africa,Explosions/Remote violence,Rest of the World,443
+Brazil,Americas,Strategic developments,Rest of the World,429
+Syria,Middle East,Strategic developments,Rest of the World,415
+Haiti,Americas,Battles,Rest of the World,408
+Iraq,Middle East,Violence against civilians,Rest of the World,404
+Pakistan,Asia,Riots,Rest of the World,401
+Pakistan,Asia,Violence against civilians,Rest of the World,397
+Mali,Africa,Strategic developments,Rest of the World,366
+Somalia,Africa,Violence against civilians,Rest of the World,350
+Kenya,Africa,Violence against civilians,Rest of the World,348
+Yemen,Middle East,Strategic developments,Rest of the World,348
+Mali,Africa,Explosions/Remote violence,Rest of the World,333
+Pakistan,Asia,Explosions/Remote violence,Rest of the World,315
+Nigeria,Africa,Riots,Rest of the World,314
+Burkina Faso,Africa,Strategic developments,Rest of the World,314
+D.R. Congo,Africa,Riots,Rest of the World,287
+Bangladesh,Asia,Violence against civilians,Rest of the World,267
+Afghanistan,Asia,Battles,Rest of the World,267
+Colombia,Americas,Strategic developments,Rest of the World,263
+Nigeria,Africa,Strategic developments,Rest of the World,261
+Afghanistan,Asia,Strategic developments,Rest of the World,233
+Haiti,Americas,Riots,Rest of the World,219
+Nigeria,Africa,Explosions/Remote violence,Rest of the World,218
+Kenya,Africa,Battles,Rest of the World,202
+D.R. Congo,Africa,Strategic developments,Rest of the World,184
+Colombia,Americas,Explosions/Remote violence,Rest of the World,178
+Lebanon,Middle East,Riots,Palestine,175
+Russia,Europe,Violence against civilians,Ukraine/Russia,168
+South Africa,Africa,Violence against civilians,Rest of the World,167
+Turkey,Middle East,Riots,Rest of the World,164
+Syria,Middle East,Riots,Rest of the World,159
+Israel,Middle East,Battles,Palestine,152
+Pakistan,Asia,Strategic developments,Rest of the World,151
+Israel,Middle East,Riots,Palestine,149
+Guatemala,Americas,Battles,Rest of the World,141
+India,Asia,Explosions/Remote violence,Rest of the World,140
+Kenya,Africa,Strategic developments,Rest of the World,120
+Cameroon,Africa,Riots,Rest of the World,117
+France,Europe,Strategic developments,Rest of the World,115
+Ethiopia,Africa,Strategic developments,Rest of the World,114
+Lebanon,Middle East,Battles,Palestine,112
+Afghanistan,Asia,Explosions/Remote violence,Rest of the World,112
+Turkey,Middle East,Battles,Rest of the World,93
+Haiti,Americas,Strategic developments,Rest of the World,80
+Guatemala,Americas,Riots,Rest of the World,78
+Turkey,Middle East,Violence against civilians,Rest of the World,78
+Somalia,Africa,Strategic developments,Rest of the World,76
+Bangladesh,Asia,Strategic developments,Rest of the World,76
+Cameroon,Africa,Explosions/Remote violence,Rest of the World,74
+Ukraine,Europe,Violence against civilians,Ukraine/Russia,70
+D.R. Congo,Africa,Explosions/Remote violence,Rest of the World,67
+Israel,Middle East,Violence against civilians,Palestine,66
+Yemen,Middle East,Riots,Rest of the World,64
+Iraq,Middle East,Riots,Rest of the World,61
+Ethiopia,Africa,Explosions/Remote violence,Rest of the World,61
+Ethiopia,Africa,Riots,Rest of the World,58
+Turkey,Middle East,Explosions/Remote violence,Rest of the World,53
+Afghanistan,Asia,Riots,Rest of the World,48
+Mali,Africa,Riots,Rest of the World,45
+Guatemala,Americas,Strategic developments,Rest of the World,44
+Bangladesh,Asia,Battles,Rest of the World,44
+Kenya,Africa,Explosions/Remote violence,Rest of the World,44
+Sudan,Africa,Riots,Rest of the World,43
+Mexico,Americas,Explosions/Remote violence,Rest of the World,43
+Brazil,Americas,Explosions/Remote violence,Rest of the World,40
+Russia,Europe,Battles,Ukraine/Russia,35
+Lebanon,Middle East,Strategic developments,Palestine,29
+Lebanon,Middle East,Violence against civilians,Palestine,27
+South Africa,Africa,Strategic developments,Rest of the World,27
+Burkina Faso,Africa,Riots,Rest of the World,19
+Somalia,Africa,Riots,Rest of the World,16
+France,Europe,Violence against civilians,Rest of the World,15
+Russia,Europe,Riots,Ukraine/Russia,8
+Bangladesh,Asia,Explosions/Remote violence,Rest of the World,7
+South Africa,Africa,Battles,Rest of the World,4
+Myanmar,Asia,Riots,Rest of the World,3
