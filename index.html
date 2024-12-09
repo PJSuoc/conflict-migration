@@ -61,7 +61,7 @@
             return json
             };
 
-        const bubbleUrl = "/interactive_draft/data/acledArray.json";
+        const bubbleUrl = "site_data/acledArray.json";
         
         // constant setting section
         const width = 800;
@@ -277,8 +277,8 @@
 
     <script>
         //////////////// BAR CHART SCRIPT //////////////////////////////////
-        const migUrl = '/interactive_draft/data/wbFinal.csv';
-        const barUrl = '/interactive_draft/data/acled.csv';
+        const migUrl = '/site_data/wbFinal.csv';
+        const barUrl = '/site_data/acled.csv';
 
         async function getBarData(url) {
             const data = await d3.csv(url);
