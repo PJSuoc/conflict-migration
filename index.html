@@ -2,7 +2,6 @@
 <head>
     <link href="src/style.css" rel="stylesheet" />
     <script src="src/d3.v7.js"></script>
-    <!--<script src="bubble_chart.js"></script>-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&family=Roboto+Mono&display=swap" rel="stylesheet">
@@ -72,17 +71,15 @@
 
         const bubbleUrl = "site_data/acledArray.json";
         
-        // constant setting section
-        const width = 800;
-        const height = 600;
-        const margin = 1;
 
-        const pack = d3.pack()
-            .size([width - margin * 2, height - margin * 2])
-            .padding(3);
 
         // INTERACTIVE DATA SORTING
         function dataSort (data, region_sel, event_sel, conflict_sel) {
+            /*
+                Sorts the data by working through each of the 3 filters
+                Reformats the data so it can be sorted by the heirarchy properly
+                Returns the data as an object
+            */
             const event_sort = event_sel;
             const region_sort = region_sel;
             const conflict_sort = conflict_sel;
@@ -121,12 +118,11 @@
             return out_data;
         };
 
+        // Gives the set number of events for a bubble on the side of the screen
         const tooltip = d3.select("#tooltip_loc")
             .append("div")
             .style("opacity", 0)
             .attr("class", "tooltip");
-
-        // Gives the set number of events for a bubble on the side of the screen
         const showTooltip = function(event, d) {
             tooltip
             .style("opacity", 1)
@@ -143,7 +139,14 @@
         const hideTooltip = function(event, d) {
             d3.select(this).attr("fill-opacity", .6);
             }
-
+        
+        // Chart Constants
+        const width = 800;
+        const height = 600;
+        const margin = 1;
+        const pack = d3.pack()
+            .size([width - margin * 2, height - margin * 2])
+            .padding(3);
         const color = d3.scaleOrdinal(d3.schemeTableau10);
 
         const bubble = d3
@@ -214,16 +217,15 @@
 
         /////////////////// THE BUBBLE CHART /////////////////////////////////////////////////
         function bubbleChart(data, region_sel, event_sel, conflict_sel) {
-            // Create new data with the selection?
+            // Create new data with the selection
             console.log("Update Sel:",region_sel, event_sel, conflict_sel);
             const out_data = dataSort(data, region_sel, event_sel, conflict_sel);
 
+            // generate the correct data format
             const out_root = pack(d3.hierarchy({children: out_data})
             .sum(d => d.violent_events));
 
-            console.log("data is now:", out_root.leaves());
-            console.log("pre update bubble:", bubble.selectAll("g"));
-            
+            // clear the old chart
             bubble.selectAll("circle").remove();
             bubble.selectAll("#c-label").remove();
 
@@ -231,21 +233,15 @@
                 .data(out_root.leaves(), function(d) { return d ? d.data.Country : this.id;})
                 .join(
                     enter => {
-                        //console.log("enter",enter);
                         enter.append("g")
                             .attr("transform", d => `translate(${d.x},${d.y})`)
                     },
                     
                     update => {
-                        console.log("update",update);
-                        //.attr("class","bubble")
                         update.attr("transform", d => `translate(${d.x},${d.y})`)},
                     exit => {
-                        //console.log("exit",exit);
                         exit.remove()}
                 );
-
-            console.log("post update bubble", bubble.selectAll("g"))
 
             const circles = bubble.selectAll("g")
                 .append("circle")
@@ -260,7 +256,6 @@
                 .append("text")
                 .attr('class', 'c-label')
                 .attr('color', '#555657')
-                //.attr("clip-path", d => `circle(${d.r})`)
                 .text(d => d.data.Country)
                 .attr("x", 0)
                 .style('font-family', "Roboto Mono, monospace")
@@ -279,7 +274,6 @@
                 }); 
 
             if (legend === false) { 
-                console.log("This maybe");
                 addLegend(out_root.leaves());
                 legend = true;
                 }
@@ -313,11 +307,9 @@
     </script>
 
     <script>
-        ////////////////// MIGRATION CHART SCRIPT /////////////////////////   
-    </script>
+        ////////  Migration and Violent Event Chart Scripts  /////////
 
-    <script>
-        //////////////// BAR CHART SCRIPT //////////////////////////////////
+        // data sources
         const migUrl = 'site_data/wbFinal.csv';
         const barUrl = 'site_data/acled.csv';
 
@@ -330,7 +322,7 @@
             filter_data = data.filter(d => d.Country === barFilter);
             return filter_data };
 
-        // set the dimensions and margins of the graph
+        // set the dimensions and margins of the graphs
         const bar_margin = {top: 10, right: 10, bottom: 40, left: 140},
             bar_width = 400 - bar_margin.left - bar_margin.right,
             bar_height = 180 - bar_margin.top - bar_margin.bottom;
@@ -339,7 +331,7 @@
             mig_width = 400 - mig_margin.left - mig_margin.right,
             mig_height = 180 - mig_margin.top - mig_margin.bottom;
 
-        // append the svg object to the body of the page
+        // append the svg objects to the body of the page
         const barSvg = d3.select("#sub_event_type")
           .append("svg")
             .attr("width", bar_width + bar_margin.left + bar_margin.right)
@@ -354,16 +346,16 @@
           .append("g")
             .attr("transform", `translate(${mig_margin.left}, ${mig_margin.top})`);
         
-        
-        ///////////////////////////////////////////////////////////////////////////////////////////////
+
         const barCreator = function(barURL, barFilter) { d3.csv(barUrl).then(function barChart(data) {
-          // Add X axis
+          // Get correct data and clear old chart
           sorted_data = sortBarData(data, barFilter);
           console.log("Bar Data:",sorted_data)
           barSvg.selectAll("g").remove();
           barSvg.selectAll("rect").remove();
-
-          console.log("Countryname", sorted_data[0].Country);
+          console.log("Country for Bar: ", sorted_data[0].Country);
+        
+          // X axis code
           const x = d3.scaleLinear()
             //Sets the width of the bar chart to the largest violent event count for the country
             .domain([0, Math.max(...sorted_data.map(row => Number(row.violent_events)))])
@@ -375,7 +367,7 @@
               .attr("transform", "translate(-10,0)rotate(-45)")
               .style("text-anchor", "end");
         
-          // Y axis
+          // Y axis code
           const y = d3.scaleBand()
             .range([ 0, bar_height ])
             .domain(sorted_data.map(d => d.event_type))
@@ -392,15 +384,16 @@
             .attr("width", d => x(d.violent_events))
             .attr("height", y.bandwidth())
             .attr("fill", "#A51303")
-            
+
+          // Flexible label
           d3.select('#ve-country')
             .html("Types of Violent Events in " + sorted_data[0].Country);
         
         })};
 
-        //////////////////////////////////////////////////////////////////////////////////////////////
+
         const migCreator = function(migURL, migFilter) { d3.csv(migUrl).then(function barChart(data) {
-            // Add X axis
+            
             sorted_data = sortBarData(data, migFilter);
             console.log("Mig Data:",sorted_data)
             migSvg.selectAll("g").remove();
@@ -408,6 +401,7 @@
             migSvg.selectAll("line").remove();
             migSvg.selectAll("text").remove();
 
+            // X axis code
             const x = d3.scaleBand()
                 .range([ 0, mig_width ])
                 .domain(sorted_data.map(d => d.Country))
@@ -416,34 +410,27 @@
                 .attr("transform", `translate(0, ${mig_height})`)
                 .call(d3.axisBottom(x))
                 .selectAll("text")
-                    //.attr("transform", "translate(-10,0)rotate(0)")
                     .style("text-anchor", "center");
 
             // Add Y axis
             const y = d3.scaleLinear()
-                // adjust this based on the min/max of migration per 1000
+                // adjust this based on the min/max of migration per 1000 to cover outliers
                 .domain([
                     Math.min(-4, sorted_data.map(row => Number(row.mg_per_1000))), 
                     Math.max(sorted_data[0].mg_per_1000, 4)])
                 .range([ mig_height, 0]);   
             migSvg.append("g")  
                 .call(d3.axisLeft(y));  
-            
-            console.log(y(0),y(.603))
 
-            
-
-            
+            // Chooses color for bar based on net migration
             function pickColor() { 
                 if (sorted_data[0].mg_per_1000 > 0) { 
                     return '#0395A5'; } 
                 else {
                     return '#A51303';
                 }}
-            barColor = pickColor()
 
-            migSvg.selectAll('#mean-line')
-                ;        
+            barColor = pickColor();
             //Bars
             migSvg.selectAll("myRect")
                 .data(sorted_data)
@@ -453,7 +440,8 @@
                 .attr("width", x.bandwidth()/2)
                 .attr("height", d => d.mg_per_1000 < 0 ? y(d.mg_per_1000) - y(0) : y(0) - y(d.mg_per_1000))
                 .attr("fill", barColor);
-
+            
+            // Y axis label
             migSvg.append("text")
                 .attr('x', -120)
                 .attr('y', -30)
