@@ -1,0 +1,94 @@
+/* COLOR REFERENCES 
+basecol = '#A51303'
+greenrange = ['#77F3D4','#A51303']
+redrange = ['#FED7D2','#FB4632','#F51D05','#A51303'] */
+
+body {
+    color: #555657;
+    text-align: center;
+    padding: 2em;
+    background-color: #EAEAEA;
+}
+
+.overall {
+    display: inline-block;
+    margin: auto;
+}
+
+.interactive{
+    display: inline-block;
+
+}
+
+.info_box {
+    padding-top: 1px;
+    height: 140px;
+    width: 400px;
+    margin: 10px;
+    background-color: lightgrey;
+}
+
+.sub_box {
+    padding-top: 1px;
+    height: 250px;
+    width: 400px;
+    margin: 10px;
+    background-color: lightgrey;
+
+}
+
+h2 {
+    font-family: "Roboto Mono", monospace;
+}
+h4 {
+    font-family: "Roboto Mono", monospace;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+h5 {
+    font-family: "Roboto Mono", monospace;
+    margin: 0;
+    padding-top: 10px;
+}
+
+p {
+    font-family: "Bitter";
+    font-style: italic;
+}
+
+.small-text {
+    font-family: "Bitter";
+    font-style: italic;
+    font-size: small;
+}
+.tiny-text {
+    font-family: "Bitter";
+    font-style: italic;
+    padding: 0;
+    margin: 0;
+    font-size: .6em;
+}
+
+.dropdown-set {
+    display: inline-block;
+}
+
+.dropdown {
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    padding: 5px;
+    border: none;
+    background-color: lightgrey;
+    font-family: "Roboto Mono", monospace;
+}
+
+.tooltip {
+    font-family: "Bitter";
+    font-style: italic;
+    color: #555657;
+    border: none;
+    background-color: none;
+    margin: 5px;
+}

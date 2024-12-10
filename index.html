@@ -1,7 +1,7 @@
 <html>
 <head>
-    <link href="style.css" rel="stylesheet" />
-    <script src="d3.v7.js"></script>
+    <link href="src/style.css" rel="stylesheet" />
+    <script src="src/d3.v7.js"></script>
     <!--<script src="bubble_chart.js"></script>-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,7 @@
     </section>
     <div class="overall">
         <div class="interactive">
-            <div class="dropdown-set">
+            <div>
                 <div class="dropdown-set">
                     <h5> Conflict Scale </h5>
                     <select class="dropdown" id="conflict_drop"></select>
@@ -48,9 +48,18 @@
             </div>
         </div>
     </div>
-    <script>
+    <div>
+        <p>Violent Events data drawn from the ACLED Conflict Database:   <a href='https://acleddata.com/data/'> ACLED </a></p>
+        <p>Migration & Population numbers drawn from the World Bank databank: <a href='https://databank.worldbank.org/databases/migration'>World Bank</a></p>
+    </div>
 
-        // Sample Data
+    <script>
+        // Contains:
+        //      Primary Chart and dropdown interactions
+        //      selection modules for secondary charts
+        //      Data import and filtration
+
+        // Dropdown encodings
         const conflict_list = ['All', 'Exclude Ukraine/Palestine']
         const region_list = ['All', 'Africa','Americas','Asia','Europe','Middle East'];
         const event_type_list = ['All','Battles','Explosions/Remote violence','Riots', 'Strategic developments','Violence against civilians'];
@@ -78,7 +87,8 @@
             const region_sort = region_sel;
             const conflict_sort = conflict_sel;
             let filter_data = [];
-            console.log("before",typeof(data), data);
+            // Check to ensure data is in a functional form
+            console.log("Data Before Filtration: ", typeof(data), data);
             if (conflict_sort !== 'All') {
                 filter_data = data.filter(data => data.conflict_size == 'Rest of the World');
             } else {
@@ -89,14 +99,12 @@
             } else {
                 filter_data = filter_data;
             };
-            //console.log("post-event", filter_data)
             if (region_sort !== 'All') {
                 filter_data = filter_data.filter(data => data.Region == region_sort);
             } else {
                 filter_data = filter_data;
             };
 
-            console.log("post-region", filter_data);
             let country_agg = Object.groupBy(filter_data, (({ Country }) => Country));
 
             let out_data = [];
@@ -118,10 +126,11 @@
             .style("opacity", 0)
             .attr("class", "tooltip");
 
+        // Gives the set number of events for a bubble on the side of the screen
         const showTooltip = function(event, d) {
             tooltip
             .style("opacity", 1)
-            .html(d.data.Country + " had " + d.data.violent_events + " violent events in 2023")
+            .html(d.data.Country + " had <b>" + d.data.violent_events + "</b> violent events in 2023 of the selected type")
             .style("left", (event.x))
             .style("top", (event.y));
             d3.select(this).attr("fill-opacity", 1);
@@ -146,6 +155,30 @@
             .attr("style", "max-width: 100%; height: auto; font: 10px sans-serif;")
             .attr("text-anchor", "middle");
         
+        function addLegend(data) {
+            // Legend hard-coded to leave all regions in when the chart is filtered
+            const legend_list = ['Africa','Americas','Asia','Europe','Middle East'];
+            bubble.selectAll("legend_squares")
+                .data(legend_list)
+                .enter()
+                .append("rect")
+                    .attr("x", 10 )
+                    .attr("y", function(d,i){ return 450 + i*25})
+                    .attr("width", 8)
+                    .attr("height", 8)
+                    .style("fill", d => color(d));
+            bubble.selectAll("legend_text")
+                .data(legend_list)
+                .enter()
+                .append("text")
+                    .attr('class', 'legend-text')
+                    .attr("x", 60)
+                    .attr("y", function(d,i){ return 455 + i*25})
+                    .text(function(d){ return d})
+                    .style('font-family', "Roboto Mono, monospace")
+                    .style("alignment-baseline", "middle");
+        }
+
         // Conflict Dropdown
         d3.select("#conflict_drop")
             .selectAll('myOptions')
@@ -171,13 +204,13 @@
             .text(function (d) { return d; })
             .attr("value", function (d) { return d; })
         
-
+        // Very similar, but bubbleupdate gets variables for dropdown selection and leaves the legend untouched
         function firstBubble(url) {getData(url).then(data => {bubbleChart(data, 'All', 'All', 'All')})};
         function bubbleUpdate(url, regSel, evSel, cSel) {getData(url).then(data => {bubbleChart(data, regSel, evSel, cSel)})};
 
+        // Creates the first bubble chart and sets the legend
         firstBubble(bubbleUrl);
-
-        
+        let legend = false;
 
         /////////////////// THE BUBBLE CHART /////////////////////////////////////////////////
         function bubbleChart(data, region_sel, event_sel, conflict_sel) {
@@ -192,7 +225,7 @@
             console.log("pre update bubble:", bubble.selectAll("g"));
             
             bubble.selectAll("circle").remove();
-            bubble.selectAll("text").remove();
+            bubble.selectAll("#c-label").remove();
 
             const bubbleArray = bubble.selectAll("g")
                 .data(out_root.leaves(), function(d) { return d ? d.data.Country : this.id;})
@@ -225,10 +258,12 @@
             
             const text = bubble.selectAll('g')
                 .append("text")
+                .attr('class', 'c-label')
                 .attr('color', '#555657')
                 //.attr("clip-path", d => `circle(${d.r})`)
                 .text(d => d.data.Country)
                 .attr("x", 0)
+                .style('font-family', "Roboto Mono, monospace")
                 .attr("y", 0);
 
             bubble.selectAll('circle')
@@ -241,7 +276,13 @@
                 console.log("Clicked country", countryClicked);
                 migCreator(barUrl, countryClicked);
                 barCreator(barUrl, countryClicked);
-        });  
+                }); 
+
+            if (legend === false) { 
+                console.log("This maybe");
+                addLegend(out_root.leaves());
+                legend = true;
+                }
             }
 
         // Interactive Selection
@@ -313,16 +354,6 @@
           .append("g")
             .attr("transform", `translate(${mig_margin.left}, ${mig_margin.top})`);
         
-        // Country Selector ///////////////////////////////////////////////////////////////////////////
-        
-        
-        d3.selectAll('circle').on('click', function(event,d) {
-            const countryClicked = "Myanmar"//d.data.Country; switch back when good data in
-            console.log("Clicked country", countryClicked);
-            migCreator(migUrl, countryClicked);
-            barCreator(barUrl, countryClicked);
-        });
-
         
         ///////////////////////////////////////////////////////////////////////////////////////////////
         const barCreator = function(barURL, barFilter) { d3.csv(barUrl).then(function barChart(data) {
